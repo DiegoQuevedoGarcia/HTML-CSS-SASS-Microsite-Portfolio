@@ -1,0 +1,27 @@
+.principal_nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+
+    a {
+        text-decoration: none;
+        color: $black-color;
+        font-size: 18px;
+        font-weight: 400;
+
+        &.active, &:hover {
+            color: $orange-color;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 80%;
+                height: 2px;
+                background-color: $orange-color;
+                bottom: -15%;
+                left: 10%;
+            }
+        }
+    }
+}

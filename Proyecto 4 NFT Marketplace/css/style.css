@@ -1,0 +1,501 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+     * Remove text-shadow in selection highlight:
+     * https://twitter.com/miketaylr/status/12228805301
+     *
+     * Customize the background color to match your design.
+     */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+     * A better looking default horizontal rule
+     */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+     * Remove the gap between audio, canvas, iframes,
+     * images, videos and the bottom of their containers:
+     * https://github.com/h5bp/html5-boilerplate/issues/440
+     */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+     * Remove default fieldset styles.
+     */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+     * Allow only vertical resizing of textareas.
+     */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+       Author's custom styles
+       ========================================================================== */
+/* ==========================================================================
+       Helper classes
+       ========================================================================== */
+/*
+     * Hide visually and from screen readers
+     */
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+     * Hide only visually, but have it available for screen readers:
+     * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+     *
+     * 1. For long content, line feeds are not interpreted as spaces and small width
+     *    causes content to wrap 1 word per line:
+     *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+     */
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+     * Extends the .visually-hidden class to allow the element
+     * to be focusable when navigated to via the keyboard:
+     * https://www.drupal.org/node/897638
+     */
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+     * Hide visually and from screen readers, but maintain layout
+     */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+     * Clearfix: contain floats
+     *
+     * The use of `table` rather than `block` is only necessary if using
+     * `::before` to contain the top-margins of child elements.
+     */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+       EXAMPLE Media Queries for Responsive Design.
+       These examples override the primary ('mobile first') styles.
+       Modify as content requires.
+       ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+       Print styles.
+       Inlined to avoid the additional HTTP request:
+       https://www.phpied.com/delay-loading-your-print-css/
+       ========================================================================== */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  /*
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/*Proyecto4*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  width: 42%;
+  background-color: #2e2f38;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.page {
+  max-width: 85%;
+  margin: 0%;
+  padding: 0%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6%;
+}
+.header a.logo {
+  text-decoration: none;
+  margin-right: 190px;
+  width: 8%;
+}
+.header a.logo img {
+  width: 100%;
+}
+
+nav.menu {
+  display: flex;
+  list-style: none;
+  gap: 100px;
+}
+nav.menu a {
+  text-decoration: none;
+  color: #2E2F38;
+  font-size: 20px;
+  font-weight: 400;
+}
+nav.menu a:hover {
+  text-decoration: underline;
+}
+
+.login {
+  margin-left: auto;
+}
+.login ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+.login .sing_up {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 60px;
+  color: white;
+  background-color: #FA504D;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
+.login .sing_up:hover {
+  text-decoration: underline;
+}
+.login .sing_in {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 60px;
+  color: white;
+  background-color: #FA504D;
+  font-size: 1.2rem;
+  font-size: 20px;
+}
+.login .sing_in:hover {
+  background-color: #671f1e;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.hero {
+  grid-column: 1/span 1;
+  margin-bottom: 6%;
+}
+.hero .hero_tittle {
+  font-size: 5rem;
+  font-family: "Belgrano", serif;
+  font-weight: 400;
+  line-height: 96px;
+  max-width: 80%;
+  margin-bottom: 40px;
+}
+.hero .hero_subtittle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 40px;
+  color: #8E8E8E;
+  margin-bottom: 40px;
+}
+.hero .hero_subtittle span {
+  border-bottom: 3px solid red;
+  padding-bottom: -50px;
+}
+.hero .hero_buttons {
+  display: flex;
+  align-items: center;
+}
+.hero .hero_buttons .Explore {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 60px;
+  color: white;
+  background-color: #FA504D;
+  font-size: 1.2rem;
+}
+.hero .hero_buttons .Explore:hover {
+  background-color: #671f1e;
+}
+.hero .hero_buttons .Lear {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 60px;
+  color: white;
+  background-color: #FA504D;
+  font-size: 1.2rem;
+  background: transparent;
+  color: #2E2F38;
+}
+.hero .hero_buttons .Lear:hover {
+  text-decoration: underline;
+}
+
+.feature {
+  grid-column: 1/span 1;
+}
+.feature .feature_tittle {
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 6%;
+}
+.feature picture {
+  display: flex;
+  gap: 40px;
+}
+.feature picture img {
+  max-width: 30%;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.nft {
+  grid-column: 2/span 1;
+  grid-row: 1/span 2;
+  padding-left: 10%;
+  padding-right: 100%;
+  position: relative;
+  top: -5%;
+  left: 10%;
+}
+.nft .nft_img img {
+  width: 40rem;
+}
+.nft .nft_data {
+  background-color: white;
+  min-width: 40rem;
+  padding: 30px;
+  position: relative;
+  top: -5%;
+}
+.nft .nft_owner {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.nft .nft_owner .nft_data_owner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+.nft .nft_owner .nft_data_owner .owner_info {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8E8E8E;
+}
+.nft .nft_owner .nft_data_owner .nft_name {
+  font-size: 24px;
+  font-weight: 500;
+}
+.nft .nft_owner .nft_price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  margin-left: auto;
+}
+.nft .nft_owner .nft_price .offer {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8E8E8E;
+}
+.nft .nft_owner .nft_price .price {
+  font-size: 24px;
+  font-weight: 500;
+}
+.nft .nft_owner .nft_button {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  justify-content: center;
+}
+.nft .nft_owner .nft_button .button_bid {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 60px;
+  color: white;
+  background-color: #FA504D;
+  font-size: 1.2rem;
+  padding: 15px 90px;
+}
+.nft .nft_owner .nft_button .button_bid:hover {
+  background-color: #671f1e;
+}
+.nft .nft_owner .nft_button .button_View {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 60px;
+  color: white;
+  background-color: #FA504D;
+  font-size: 1.2rem;
+  padding: 15px 90px;
+  background-color: transparent;
+  color: #FA504D;
+}
+.nft .nft_owner .nft_button .button_View:hover {
+  text-decoration: underline;
+}
+.nft .numbers {
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+  gap: 50px;
+}
+.nft .numbers p {
+  color: #FA504D;
+  font-size: 32px;
+  font-weight: 500;
+}
+.nft .numbers span {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+.nft .Artzie {
+  font-size: 300px;
+  color: white;
+  opacity: 0.05;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 25%;
+  right: -25%;
+  z-index: -1;
+}/*# sourceMappingURL=style.css.map */

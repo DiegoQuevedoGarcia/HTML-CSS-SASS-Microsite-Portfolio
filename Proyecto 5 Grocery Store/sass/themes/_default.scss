@@ -1,0 +1,13 @@
+html * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: $poppins-font;
+}
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

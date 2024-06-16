@@ -1,0 +1,121 @@
+.hero {
+    display: flex;
+    margin-top: 5%;
+
+
+    &_content {
+        width: 50%;
+
+        .hero_tittle {
+            font-family: $montserrat-font;
+            font-size: 90px;
+            font-weight: 700;
+            letter-spacing: -2.8px;
+            color: $black-color;
+            margin-bottom: 30px;
+
+
+            span {
+                color: $orange-color;
+                font-weight: 600;
+
+            }
+        }
+
+        .hero_subtittle {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 40px;
+            margin-bottom: 30px;
+            color: $grey-color;
+            max-width: 70%;
+        }
+
+        .search {
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 7%;
+            width: 65%;
+
+            input {
+                background-color: rgba(208, 208, 210, 0.25);
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                width: 50%;
+                padding-left: 15px;
+                height: 60px;
+                flex-shrink: 0;
+                border: none;
+            }
+
+            button {
+                background-color: $orange-color;
+                display: inline-block;
+                width: 10%;
+                border: 0;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                img {
+                    width: 60%;
+                }
+            }
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            list-style: none;
+            gap: 10px;
+            width: 60%;
+
+            li {
+                display: flex;
+                align-items: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: #949494;
+                font-size: 18px;
+                font-weight: 400;
+
+                img {
+                    width: 18px;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+
+    &_bg {
+        width: 50%;
+        margin-top: -3%;
+
+        img {
+            width: 65%;
+        }
+    }
+}
+
+.products {
+    display: flex;
+    gap: 40px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    h3 {
+        font-size: 24px;
+        font-weight: 500;
+        color: $black-color;
+        margin-top: 10px;
+        margin-bottom: 8px;  
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400; 
+        color: $grey-color;
+    }
+}
